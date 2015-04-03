@@ -1,0 +1,16 @@
+# Managed by puppet
+<%=
+[
+  :interface_order,
+  :dynamic_order,
+  :search_domains,
+  :search_domains_append,
+  :name_servers,
+  :name_servers_append,
+  :private_interfaces,
+  :state_dir
+].map { |var|
+  val = instance_variable_get("@#{var}")
+  %{#{var}="#{val}"} if val
+}.compact.join("\n")
+%>
