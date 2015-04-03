@@ -1,0 +1,13 @@
+{
+  "name": "caius-resolvconf",
+  "version": "0.1.0",
+  "author": "caius",
+  "summary": "Manage resolvconf(8)",
+  "license": "Apache-2.0",
+  "source": "https://github.com/caius/puppet-resolvconf",
+  "project_page": "https://github.com/caius/puppet-resolvconf",
+  "issues_url": "https://github.com/caius/puppet-resolvconf/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
